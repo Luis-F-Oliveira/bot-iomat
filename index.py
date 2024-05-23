@@ -1,5 +1,7 @@
 import customtkinter
 from src.lib.python.views.configuration import Configuration
+from src.lib.python.runplaywright import run_playwright
+from src.lib.python.sendemail import SendEmail
 
 class Body(customtkinter.CTkFrame):
   def __init__(self, master, **kwargs):
@@ -10,7 +12,8 @@ class Body(customtkinter.CTkFrame):
       text='Iniciar',
       fg_color='#437512',
       hover_color="#437512",
-      text_color='#D4DBB9'
+      text_color='#D4DBB9',
+      command=self.start
     )
     self.button.pack(side='left')
 
@@ -25,6 +28,10 @@ class Body(customtkinter.CTkFrame):
     self.button.pack(side='left', padx=4)
 
     self.toplevel_window = None
+
+  def start(self):
+    run_playwright()
+    SendEmail().send()
 
   def openConfiguration(self):
     if self.toplevel_window is None or not self.toplevel_window.winfo_exists():

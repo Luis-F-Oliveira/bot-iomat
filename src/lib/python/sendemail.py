@@ -104,5 +104,3 @@ class SendEmail:
       server.sendmail(email, items['email'], msg.as_string())
       server.quit()
       print(f'Email enviado para: {items["email"]}')
-
-SendEmail().send()

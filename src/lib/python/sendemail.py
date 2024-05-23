@@ -62,7 +62,7 @@ class SendEmail:
               </p>
               <p>
                 Essa mensagem foi produzida pelo serviço "FACILITA DIÁRIO" da DIRETORIA DE GESTÃO DE PESSOAS. <br>
-                Para mais informações sobre o serviço, entre em contato: facilitadiario@dp.mt.gov.br.
+                Para mais informações sobre o serviço, entre em contato documentosgestaodepessoas@dp.mt.gov.br.
               </p>
               <div style="margin-top: 35px;">
                 <h1 style="font-size: medium;">
@@ -83,8 +83,8 @@ class SendEmail:
                 Destacamos que o acompanhamento somente compreende as publicações da Defensoria Pública do Estado de Mato Grosso.
               </p>
               <p>
-                Se estiver enfrentando algum problema ou perceber a falha na captura de informações, favor informar 
-                pelo e-mail: facilitadiario@dp.mt.gov.br
+                Se estiver enfrentando algum problema, perceber a falha na captura de informações ou deseja parar de receber os alertas, favor informar 
+                pelo e-mail: documentosgestaodepessoas@dp.mt.gov.br
               </p>
             </footer>
           </div>

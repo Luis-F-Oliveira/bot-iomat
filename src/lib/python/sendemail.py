@@ -41,11 +41,13 @@ class SendEmail:
       message = f"""
         <!DOCTYPE html>
         <html lang="en">
+
         <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Document</title>
         </head>
+
         <body>
           <div>
             <header style="background-image: linear-gradient(to right, #15e431, #062400);">
@@ -55,7 +57,7 @@ class SendEmail:
             </header>
             <main>
               <p>
-                Prezado(a), 
+                Prezado(a),
                 <span style="background-color: #00ff2238; padding: 4px 6px; color: #000;">
                   <strong style="text-transform: capitalize;">{items['name']}.</strong>
                 </span>
@@ -75,20 +77,25 @@ class SendEmail:
             </main>
             <footer style="margin-top: 50px;">
               <p>
-                Este serviço é um projeto experimental da Diretoria de Gestão de Pessoas com o objetivo facilitar o 
-                acompanhamento de publicações da Defensoria Pública pelos seus servidores, não substituindo, de qualquer 
-                forma, a obrigação de acompanhamento do Diário Oficial diretamente dos sistemas do IOMAT.
+                Este serviço é um projeto experimental da Diretoria de Gestão de Pessoas com o objetivo de facilitar o
+                acompanhamento de publicações da Defensoria Pública pelos seus servidores, <strong>não substituindo, de qualquer
+                  forma, a obrigação de acompanhamento do Diário Oficial diretamente dos sistemas do IOMAT.</strong>
               </p>
               <p>
-                Destacamos que o acompanhamento somente compreende as publicações da Defensoria Pública do Estado de Mato Grosso.
+                Destacamos que o acompanhamento somente compreende as publicações da Defensoria Pública do Estado de Mato
+                Grosso.
               </p>
               <p>
-                Se estiver enfrentando algum problema, perceber a falha na captura de informações ou deseja parar de receber os alertas, favor informar 
-                pelo e-mail: documentosgestaodepessoas@dp.mt.gov.br
+                Se estiver enfrentando algum problema, perceber a falha na captura de informações <strong>ou deseja parar de receber os
+                alertas, favor informar pelo e-mail: documentosgestaodepessoas@dp.mt.gov.br</strong>
+              </p>
+              <p>
+                Faça a avaliação de nossos serviços em: <a href="https://forms.gle/shgmoa8uo11QfmG17">https://forms.gle/shgmoa8uo11QfmG17</a>
               </p>
             </footer>
           </div>
         </body>
+
         </html>
       """
 
